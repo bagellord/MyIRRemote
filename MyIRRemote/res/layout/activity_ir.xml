@@ -1,28 +1,163 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/irRemoteRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".IRActivity" >
+    android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/irRemoteTvPower"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/irRemoteTvPower"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_tv_power" />
+
+        <Button
+            android:id="@+id/irRemoteXboxPower"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_xbox_power" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/irRemoteXboxPause"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_xbox_pause" />
+
+        <Button
+            android:id="@+id/irRemoteXboxPlay"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_xbox_play" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/irRemoteXboxA"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_xbox_a" />
+
+        <Button
+            android:id="@+id/irRemoteXboxX"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_xbox_x" />
+
+        <Button
+            android:id="@+id/irRemoteXboxB"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_xbox_b" />
+
+        <Button
+            android:id="@+id/irRemoteXboxY"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_xbox_y" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/ir_remote_tv_power" />
+        android:gravity="center" >
 
-    <Button
-        android:id="@+id/irRemoteXboxPower"
-        android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/irRemoteXboxUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ir_remote_xbox_up_cd"
+            android:onClick="irSend"
+            android:src="@drawable/navigation_collapse" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/irRemoteTvPower"
-        android:layout_alignParentRight="true"
-        android:text="@string/ir_remote_xbox_power" />
+        android:baselineAligned="false" >
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/irRemoteXboxLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ir_remote_xbox_left_cd"
+                android:onClick="irSend"
+                android:src="@drawable/navigation_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/irRemoteXboxRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ir_remote_xbox_right_cd"
+                android:onClick="irSend"
+                android:src="@drawable/navigation_forward" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/irRemoteXboxDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ir_remote_xbox_down_cd"
+            android:onClick="irSend"
+            android:src="@drawable/navigation_expand" />
+    </LinearLayout>
+
+</LinearLayout>

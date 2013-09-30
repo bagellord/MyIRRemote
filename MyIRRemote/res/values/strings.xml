@@ -6,5 +6,15 @@
     <string name="hello_world">Hello world!</string>
     <string name="ir_remote_tv_power">TV Power</string>
     <string name="ir_remote_xbox_power">Xbox Power</string>
+    <string name="ir_remote_xbox_pause">Pause</string>
+    <string name="ir_remote_xbox_play">Play</string>
+    <string name="ir_remote_xbox_a">A</string>
+    <string name="ir_remote_xbox_x">X</string>
+    <string name="ir_remote_xbox_b">B</string>
+    <string name="ir_remote_xbox_y">Y</string>
+    <string name="ir_remote_xbox_up_cd">Up Button</string>
+    <string name="ir_remote_xbox_right_cd">Right button</string>
+    <string name="ir_remote_xbox_left_cd">Left Button</string>
+    <string name="ir_remote_xbox_down_cd">Down Button</string>
 
 </resources>

@@ -216,7 +216,7 @@ public class IRActivity extends Activity {
 		}
 
 		// Did not consume the event
-		return false;
+		return super.dispatchKeyEvent(event);
 	}
 
 	/**

@@ -28,20 +28,23 @@ public final class R {
         public static final int navigation_forward=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000e;
+        public static final int action_settings=0x7f080011;
         public static final int irRemoteRoot=0x7f080000;
+        public static final int irRemoteTvEnter=0x7f080005;
         public static final int irRemoteTvPower=0x7f080002;
-        public static final int irRemoteXboxA=0x7f080006;
-        public static final int irRemoteXboxB=0x7f080008;
-        public static final int irRemoteXboxDown=0x7f08000d;
-        public static final int irRemoteXboxLeft=0x7f08000b;
-        public static final int irRemoteXboxPause=0x7f080004;
-        public static final int irRemoteXboxPlay=0x7f080005;
+        public static final int irRemoteTvSource=0x7f080004;
+        public static final int irRemoteXboxA=0x7f080008;
+        public static final int irRemoteXboxB=0x7f08000a;
+        public static final int irRemoteXboxDown=0x7f080010;
+        public static final int irRemoteXboxLeft=0x7f08000d;
+        public static final int irRemoteXboxPause=0x7f080006;
+        public static final int irRemoteXboxPlay=0x7f080007;
         public static final int irRemoteXboxPower=0x7f080003;
-        public static final int irRemoteXboxRight=0x7f08000c;
-        public static final int irRemoteXboxUp=0x7f08000a;
-        public static final int irRemoteXboxX=0x7f080007;
-        public static final int irRemoteXboxY=0x7f080009;
+        public static final int irRemoteXboxRight=0x7f08000f;
+        public static final int irRemoteXboxUp=0x7f08000c;
+        public static final int irRemoteXboxX=0x7f080009;
+        public static final int irRemoteXboxXbox=0x7f08000e;
+        public static final int irRemoteXboxY=0x7f08000b;
         public static final int linearLayout1=0x7f080001;
     }
     public static final class layout {
@@ -54,7 +57,12 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
+        public static final int ir_remote_tv_down=0x7f050011;
+        public static final int ir_remote_tv_enter=0x7f050013;
+        public static final int ir_remote_tv_mute=0x7f050014;
         public static final int ir_remote_tv_power=0x7f050003;
+        public static final int ir_remote_tv_source=0x7f05000f;
+        public static final int ir_remote_tv_up_cd=0x7f050010;
         public static final int ir_remote_xbox_a=0x7f050007;
         public static final int ir_remote_xbox_b=0x7f050009;
         public static final int ir_remote_xbox_down_cd=0x7f05000e;
@@ -65,6 +73,7 @@ public final class R {
         public static final int ir_remote_xbox_right_cd=0x7f05000c;
         public static final int ir_remote_xbox_up_cd=0x7f05000b;
         public static final int ir_remote_xbox_x=0x7f050008;
+        public static final int ir_remote_xbox_xbox=0x7f050012;
         public static final int ir_remote_xbox_y=0x7f05000a;
     }
     public static final class style {

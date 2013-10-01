@@ -3,6 +3,7 @@
     android:id="@+id/irRemoteRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -28,6 +29,31 @@
             android:layout_weight="1"
             android:onClick="irSend"
             android:text="@string/ir_remote_xbox_power" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/irRemoteTvSource"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_tv_source" />
+
+        <Button
+            android:id="@+id/irRemoteTvEnter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="irSend"
+            android:text="@string/ir_remote_tv_enter" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -128,6 +154,22 @@
                 android:contentDescription="@string/ir_remote_xbox_left_cd"
                 android:onClick="irSend"
                 android:src="@drawable/navigation_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/irRemoteXboxXbox"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="irSend"
+                android:text="@string/ir_remote_xbox_xbox" />
+
         </LinearLayout>
 
         <LinearLayout

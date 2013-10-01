@@ -16,5 +16,11 @@
     <string name="ir_remote_xbox_right_cd">Right button</string>
     <string name="ir_remote_xbox_left_cd">Left Button</string>
     <string name="ir_remote_xbox_down_cd">Down Button</string>
+    <string name="ir_remote_tv_source">Source</string>
+    <string name="ir_remote_tv_up_cd">TV Up</string>
+    <string name="ir_remote_tv_down">TV Down</string>
+    <string name="ir_remote_xbox_xbox">Xbox</string>
+    <string name="ir_remote_tv_enter">Enter</string>
+    <string name="ir_remote_tv_mute">Mute</string>
 
 </resources>

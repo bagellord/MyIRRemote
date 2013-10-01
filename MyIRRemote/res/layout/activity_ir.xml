@@ -7,7 +7,7 @@
     android:orientation="vertical" >
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/irRemotePowerLayout"
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -32,6 +32,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/irRemoteSourceLayout"
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -57,6 +58,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/irRemotePlayPauseLayout"
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -81,18 +83,25 @@
     </LinearLayout>
 
     <LinearLayout
-        style="?android:attr/buttonBarStyle"
+        android:id="@+id/irRemoteYLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/irRemoteXboxA"
+            android:id="@+id/irRemoteXboxY"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="irSend"
-            android:text="@string/ir_remote_xbox_a" />
+            android:text="@string/ir_remote_xbox_y" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/irRemoteXBLayout"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
         <Button
             android:id="@+id/irRemoteXboxX"
@@ -111,18 +120,25 @@
             android:layout_weight="1"
             android:onClick="irSend"
             android:text="@string/ir_remote_xbox_b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/irRemoteALayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/irRemoteXboxY"
+            android:id="@+id/irRemoteXboxA"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="irSend"
-            android:text="@string/ir_remote_xbox_y" />
+            android:text="@string/ir_remote_xbox_a" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/irRemoteXboxUpLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
@@ -137,11 +153,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/irRemoteXboxLXBRLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:baselineAligned="false" >
 
         <LinearLayout
+            android:id="@+id/irRemoteXboxLeftLayout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -157,6 +175,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/irRemoteXboxXboxLayout"
             style="?android:attr/buttonBarStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -173,6 +192,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/irRemoteXboxRightLayout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -189,6 +209,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/irRemoteXboxDownLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
